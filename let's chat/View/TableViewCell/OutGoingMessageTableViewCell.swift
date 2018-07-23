@@ -15,7 +15,7 @@ class OutGoingMessageTableViewCell: UITableViewCell {
     
     func bindDataFrom(_ message: Message){
         let userInfo = message.username + " - " + message.time
-        userInfo.text = userInfo
+        userInfoLabel.text = userInfo
         messageLabel.text = message.content
     }
     

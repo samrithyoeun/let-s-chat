@@ -15,7 +15,7 @@ class OutGoingImageTableViewCell: UITableViewCell {
     
     func bindDataFrom(_ message: Message){
         let userInfo = message.username + " - " + message.time
-        userInfo.text = userInfo
+        userInfoLabel.text = userInfo
         messageImageView.image = UIImage(named: message.content)
     }
     

@@ -15,13 +15,13 @@
 		5397747121058008009A002F /* Mina-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5397746E21058008009A002F /* Mina-Bold.ttf */; };
 		5397747221058008009A002F /* Mina-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5397746F21058008009A002F /* Mina-Regular.ttf */; };
 		5397747321058008009A002F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5397747021058008009A002F /* OFL.txt */; };
-		539774792105A845009A002F /* UITextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774782105A845009A002F /* UITextFeild.swift */; };
 		5397747B2105B383009A002F /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397747A2105B383009A002F /* ConversationViewController.swift */; };
 		5397747F2105B46B009A002F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397747E2105B46B009A002F /* Message.swift */; };
 		539774822105C164009A002F /* InComingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774812105C164009A002F /* InComingMessageTableViewCell.swift */; };
 		539774842105C236009A002F /* InComingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774832105C236009A002F /* InComingImageTableViewCell.swift */; };
 		539774862105C36B009A002F /* OutGoingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */; };
 		539774882105C400009A002F /* OutGoingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774872105C400009A002F /* OutGoingImageTableViewCell.swift */; };
+		5397748B2105D614009A002F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397748A2105D614009A002F /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +35,13 @@
 		5397746E21058008009A002F /* Mina-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mina-Bold.ttf"; sourceTree = "<group>"; };
 		5397746F21058008009A002F /* Mina-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mina-Regular.ttf"; sourceTree = "<group>"; };
 		5397747021058008009A002F /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
-		539774782105A845009A002F /* UITextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFeild.swift; sourceTree = "<group>"; };
 		5397747A2105B383009A002F /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		5397747E2105B46B009A002F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		539774812105C164009A002F /* InComingMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InComingMessageTableViewCell.swift; sourceTree = "<group>"; };
 		539774832105C236009A002F /* InComingImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InComingImageTableViewCell.swift; sourceTree = "<group>"; };
 		539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutGoingMessageTableViewCell.swift; sourceTree = "<group>"; };
 		539774872105C400009A002F /* OutGoingImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutGoingImageTableViewCell.swift; sourceTree = "<group>"; };
+		5397748A2105D614009A002F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				539774592105798C009A002F /* LoginViewController.swift */,
+				5397748A2105D614009A002F /* SettingViewController.swift */,
 				5397747A2105B383009A002F /* ConversationViewController.swift */,
 			);
 			path = Controller;
@@ -126,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				539774742105800E009A002F /* Font */,
-				539774782105A845009A002F /* UITextFeild.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -226,9 +226,9 @@
 			files = (
 				5397745A2105798C009A002F /* LoginViewController.swift in Sources */,
 				539774842105C236009A002F /* InComingImageTableViewCell.swift in Sources */,
-				539774792105A845009A002F /* UITextFeild.swift in Sources */,
 				5397747F2105B46B009A002F /* Message.swift in Sources */,
 				539774822105C164009A002F /* InComingMessageTableViewCell.swift in Sources */,
+				5397748B2105D614009A002F /* SettingViewController.swift in Sources */,
 				539774862105C36B009A002F /* OutGoingMessageTableViewCell.swift in Sources */,
 				539774882105C400009A002F /* OutGoingImageTableViewCell.swift in Sources */,
 				5397747B2105B383009A002F /* ConversationViewController.swift in Sources */,
