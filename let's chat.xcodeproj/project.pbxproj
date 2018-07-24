@@ -142,9 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				539774742105800E009A002F /* Font */,
+				CD6C33CC21073DE800E22718 /* Extension */,
 				53393DBE2106CD13003D184B /* Result.swift */,
-				53393DC621070BFE003D184B /* UITextFieldEx.swift */,
-				53393DC42106FEE4003D184B /* UIColorEx.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -152,10 +151,9 @@
 		539774802105B47A009A002F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5397747E2105B46B009A002F /* Message.swift */,
-				53393DC02106DE8C003D184B /* ControllerManager.swift */,
-				53393DC22106FC31003D184B /* Theme.swift */,
-				53393DC821071CE1003D184B /* ThemeManager.swift */,
+				CD6C33CB21073DDE00E22718 /* Model */,
+				CD6C33C921073DCD00E22718 /* Manager */,
+				CD6C33CA21073DD600E22718 /* Enum */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +167,40 @@
 				539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */,
 			);
 			path = ChatTableViewCell;
+			sourceTree = "<group>";
+		};
+		CD6C33C921073DCD00E22718 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				53393DC02106DE8C003D184B /* ControllerManager.swift */,
+				53393DC821071CE1003D184B /* ThemeManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CD6C33CA21073DD600E22718 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				53393DC22106FC31003D184B /* Theme.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		CD6C33CB21073DDE00E22718 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5397747E2105B46B009A002F /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD6C33CC21073DE800E22718 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53393DC621070BFE003D184B /* UITextFieldEx.swift */,
+				53393DC42106FEE4003D184B /* UIColorEx.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

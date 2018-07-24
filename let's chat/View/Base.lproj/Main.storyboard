@@ -546,6 +546,7 @@
                         <outlet property="chatTableButtomConstriant" destination="AkX-CP-DD4" id="HOt-ky-nYg"/>
                         <outlet property="chatTableView" destination="vSK-kL-lO4" id="loG-O5-IwB"/>
                         <outlet property="inputButton" destination="vi1-c7-1r0" id="8hr-4L-PXk"/>
+                        <outlet property="inputHolderView" destination="st2-0V-XdD" id="1OD-CB-2Pv"/>
                         <outlet property="inputViewBottomConstraint" destination="SDQ-dV-Fnr" id="YG6-ss-Pkf"/>
                         <outlet property="letchatLabel" destination="jV5-JT-O0q" id="tQS-Xq-bqt"/>
                         <outlet property="likeButton" destination="SUT-yl-pjB" id="mBQ-Z1-ylS"/>
@@ -809,7 +810,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsA-St-3GF">
                                                     <rect key="frame" x="116" y="48.5" width="64" height="23"/>
                                                     <fontDescription key="fontDescription" name="Mina-Regular" family="Mina" pointSize="14"/>
-                                                    <color key="textColor" white="0.51947204106383849" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZm-HU-gPZ">
@@ -827,7 +828,7 @@
                                                         <constraint firstAttribute="width" constant="81" id="SfK-oe-jGb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Mina-Regular" family="Mina" pointSize="14"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked-white" translatesAutoresizingMaskIntoConstraints="NO" id="eGs-j6-ONs">
@@ -884,7 +885,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#FFFFFF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRm-E8-W3x">
                                                     <rect key="frame" x="116" y="48.5" width="57.5" height="23"/>
                                                     <fontDescription key="fontDescription" name="Mina-Regular" family="Mina" pointSize="14"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4s-GS-gVX">
@@ -959,7 +960,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#F5E050 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Rb-wl-1Wr">
                                                     <rect key="frame" x="116" y="47.5" width="65" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="Mina-Regular" family="Mina" pointSize="14"/>
-                                                    <color key="textColor" red="0.96078431369999995" green="0.87843137250000003" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.77007206750710655" green="0.70857884195529819" blue="0.25819172624550857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secondary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRK-OJ-Mh8">
@@ -1079,6 +1080,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EmW-6Y-jYO"/>
-        <segue reference="718-OF-RIQ"/>
+        <segue reference="mdU-NV-H41"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,9 +25,11 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var supriseFaceButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
     
+    @IBOutlet weak var inputHolderView: UIView!
     @IBOutlet weak var inputViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var chatTableButtomConstriant: NSLayoutConstraint!
     
+    lazy var labelGroup = [letchatLabel, channelLabel, ]
     
     var conversations = [Message]()
     var testSendingMessage  = 1
