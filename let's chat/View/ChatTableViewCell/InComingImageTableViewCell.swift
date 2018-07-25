@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InComingImageTableViewCell: UITableViewCell {
+class InComingImageTableViewCell: TemplateTableViewCell {
 
     @IBOutlet weak var senderInfoLabel: UILabel!
     @IBOutlet weak var senderImageView: UIImageView!

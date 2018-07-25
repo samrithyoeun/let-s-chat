@@ -129,6 +129,9 @@
                                     <state key="normal" title="Chitchat (6)">
                                         <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <segue destination="krV-fj-5cj" kind="show" id="lC3-JQ-adc"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -545,12 +548,14 @@
                         <outlet property="channelLabel" destination="uvI-Q6-pmf" id="NbK-1B-gBP"/>
                         <outlet property="chatTableButtomConstriant" destination="AkX-CP-DD4" id="HOt-ky-nYg"/>
                         <outlet property="chatTableView" destination="vSK-kL-lO4" id="loG-O5-IwB"/>
+                        <outlet property="headerView" destination="eWP-ZH-zsd" id="4ig-ic-WoN"/>
                         <outlet property="inputButton" destination="vi1-c7-1r0" id="8hr-4L-PXk"/>
                         <outlet property="inputHolderView" destination="st2-0V-XdD" id="1OD-CB-2Pv"/>
                         <outlet property="inputViewBottomConstraint" destination="SDQ-dV-Fnr" id="YG6-ss-Pkf"/>
+                        <outlet property="inputsView" destination="8mx-Ex-QlN" id="VuM-pL-xmD"/>
                         <outlet property="letchatLabel" destination="jV5-JT-O0q" id="tQS-Xq-bqt"/>
                         <outlet property="likeButton" destination="SUT-yl-pjB" id="mBQ-Z1-ylS"/>
-                        <outlet property="lineView" destination="uvI-Q6-pmf" id="lms-fE-Byj"/>
+                        <outlet property="lineView" destination="vNT-P6-0zV" id="edT-A9-Luc"/>
                         <outlet property="messageTextField" destination="LCi-u2-yO5" id="hcf-x7-rmN"/>
                         <outlet property="onlineLabel" destination="de3-JD-DTZ" id="KnR-Wj-6Kz"/>
                         <outlet property="sadFaceButton" destination="44X-n8-ZUy" id="FaU-sC-quz"/>
@@ -563,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wrs-J6-aaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3012" y="18"/>
+            <point key="canvasLocation" x="1641" y="711"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="9iG-Vh-hZ7">
@@ -1059,7 +1064,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6I-Qu-b09" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2335" y="18"/>
+            <point key="canvasLocation" x="1970" y="-207"/>
         </scene>
     </scenes>
     <resources>
@@ -1079,7 +1084,7 @@
         <image name="user-white" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EmW-6Y-jYO"/>
+        <segue reference="4Ip-fW-kDN"/>
         <segue reference="mdU-NV-H41"/>
     </inferredMetricsTieBreakers>
 </document>

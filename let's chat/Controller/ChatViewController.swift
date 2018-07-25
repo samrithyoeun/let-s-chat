@@ -24,12 +24,15 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var sadFaceButton: UIButton!
     @IBOutlet weak var supriseFaceButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
-    
     @IBOutlet weak var inputHolderView: UIView!
+    @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var inputViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var chatTableButtomConstriant: NSLayoutConstraint!
+    @IBOutlet weak var inputsView: UIView!
     
-    lazy var labelGroup = [letchatLabel, channelLabel, ]
+    lazy var labelGroup = [letchatLabel, channelLabel, onlineLabel]
+    lazy var buttonGroup = [settingButton, inputButton, sendButton, sadFaceButton, supriseFaceButton, likeButton, smileButton]
+    lazy var viewGroup = [chatTableView, view, stickerView, inputsView, headerView]
     
     var conversations = [Message]()
     var testSendingMessage  = 1
@@ -48,10 +51,14 @@ class ChatViewController: UIViewController {
     }
     
     @IBAction func keyboardButtonTapped(_ sender: Any) {
-        inputViewBottomConstraint.constant += 50
-        print(chatTableButtomConstriant.constant)
-        updateTableContentInset(forTableView: chatTableView)
-        scrollToBottom()
+//        inputViewBottomConstraint.constant += 50
+//        print(chatTableButtomConstriant.constant)
+//        updateTableContentInset(forTableView: chatTableView)
+//        scrollToBottom()
+        
+        ThemeManager.shared.switchTheme { (theme) in
+            changeThemeTo(theme)
+        }
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {
@@ -129,8 +136,29 @@ extension ChatViewController: UITextFieldDelegate {
 
 extension ChatViewController: ThemeManagerProtocol{
     func changeThemeTo(_ theme: Theme) {
-        
+        ThemeManager.changeTo( theme) { (firstColor, secondColor) in
+            
+            for view in viewGroup {
+                view?.backgroundColor = firstColor
+            }
+            
+            lineView.backgroundColor = secondColor
+            inputHolderView.backgroundColor = secondColor
+            
+            for label in labelGroup {
+                label?.textColor = secondColor
+            }
+            
+            for button in buttonGroup {
+                button?.setTitleColor(secondColor, for: .normal)
+                button?.imageView?.tintColor = secondColor
+            }
+            
+            messageTextField.backgroundColor = secondColor
+            messageTextField.setPlaceHolderColor(firstColor)
+        }
     }
-    
-    
 }
+
+
+

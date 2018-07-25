@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OutGoingMessageTableViewCell: UITableViewCell {
+class OutGoingMessageTableViewCell: TemplateTableViewCell {
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var userInfoLabel: UILabel!

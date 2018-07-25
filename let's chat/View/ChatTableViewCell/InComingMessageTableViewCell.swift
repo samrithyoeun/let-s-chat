@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InComingMessageTableViewCell: UITableViewCell {
+class InComingMessageTableViewCell: TemplateTableViewCell {
 
     @IBOutlet weak var senderInfoLabel: UILabel!
     @IBOutlet weak var senderMessageLabel: UILabel!

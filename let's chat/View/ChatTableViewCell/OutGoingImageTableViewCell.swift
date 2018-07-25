@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OutGoingImageTableViewCell: UITableViewCell {
+class OutGoingImageTableViewCell: TemplateTableViewCell {
     
     @IBOutlet weak var userInfoLabel: UILabel!
     @IBOutlet weak var messageImageView: UIImageView!

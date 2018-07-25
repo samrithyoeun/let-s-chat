@@ -29,6 +29,7 @@
 		539774862105C36B009A002F /* OutGoingMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */; };
 		539774882105C400009A002F /* OutGoingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774872105C400009A002F /* OutGoingImageTableViewCell.swift */; };
 		5397748B2105D614009A002F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5397748A2105D614009A002F /* SettingViewController.swift */; };
+		CD6C33CE21074AD100E22718 /* TemplateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C33CD21074AD100E22718 /* TemplateTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutGoingMessageTableViewCell.swift; sourceTree = "<group>"; };
 		539774872105C400009A002F /* OutGoingImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutGoingImageTableViewCell.swift; sourceTree = "<group>"; };
 		5397748A2105D614009A002F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CD6C33CD21074AD100E22718 /* TemplateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				539774832105C236009A002F /* InComingImageTableViewCell.swift */,
+				CD6C33CD21074AD100E22718 /* TemplateTableViewCell.swift */,
 				539774812105C164009A002F /* InComingMessageTableViewCell.swift */,
 				539774872105C400009A002F /* OutGoingImageTableViewCell.swift */,
 				539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */,
@@ -288,6 +291,7 @@
 				5397748B2105D614009A002F /* SettingViewController.swift in Sources */,
 				539774862105C36B009A002F /* OutGoingMessageTableViewCell.swift in Sources */,
 				539774882105C400009A002F /* OutGoingImageTableViewCell.swift in Sources */,
+				CD6C33CE21074AD100E22718 /* TemplateTableViewCell.swift in Sources */,
 				53393DC921071CE1003D184B /* ThemeManager.swift in Sources */,
 				5397747B2105B383009A002F /* ChatViewController.swift in Sources */,
 				53393DC12106DE8C003D184B /* ControllerManager.swift in Sources */,
