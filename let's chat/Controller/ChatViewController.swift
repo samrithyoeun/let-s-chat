@@ -50,17 +50,19 @@ class ChatViewController: UIViewController {
         // TODO: hide the stickerbar , filter sender row in tablecell , calculate keyboard size 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let theme = ThemeManager.shared.getTheme()
+        changeThemeTo(theme)
+        chatTableView.reloadData()
+    }
+    
     @IBAction func keyboardButtonTapped(_ sender: Any) {
 //        inputViewBottomConstraint.constant += 50
 //        print(chatTableButtomConstriant.constant)
 //        updateTableContentInset(forTableView: chatTableView)
 //        scrollToBottom()
-        
-        ThemeManager.shared.switchTheme { (theme) in
-            changeThemeTo(theme)
-            UserDefaults.standard.set(theme.rawValue, forKey: Config.theme)
-            chatTableView.reloadData()
-        }
+
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {
@@ -68,6 +70,7 @@ class ChatViewController: UIViewController {
         chatTableView.reloadData()
         scrollToBottom()
     }
+    
     private func updateTableContentInset(forTableView tv: UITableView) {
         let numSections = tv.numberOfSections
         var contentInsetTop = chatTableView.bounds.size.height
@@ -92,10 +95,7 @@ class ChatViewController: UIViewController {
         }
         tv.contentInset = UIEdgeInsetsMake(contentInsetTop, 0, 0, 0)
     }
-    
-    public func changeThemeTo(){
-        
-    }
+
 }
 
 extension ChatViewController: UITableViewDelegate {
@@ -117,6 +117,7 @@ extension ChatViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell = chatTableView.dequeueReusableCell(withIdentifier: "incomingMessage") as! InComingMessageTableViewCell
         let message = conversations[indexPath.row]
         cell.bindDataFrom(message)

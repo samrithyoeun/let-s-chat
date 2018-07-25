@@ -15,6 +15,7 @@
 		53393DC721070BFE003D184B /* UITextFieldEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53393DC621070BFE003D184B /* UITextFieldEx.swift */; };
 		53393DC921071CE1003D184B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53393DC821071CE1003D184B /* ThemeManager.swift */; };
 		53451B4C2108147100CFFEDF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451B4B2108147100CFFEDF /* Config.swift */; };
+		53451B4E21082CEE00CFFEDF /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451B4D21082CEE00CFFEDF /* Channel.swift */; };
 		539774582105798C009A002F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774572105798C009A002F /* AppDelegate.swift */; };
 		5397745A2105798C009A002F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774592105798C009A002F /* LoginViewController.swift */; };
 		5397745D2105798C009A002F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5397745B2105798C009A002F /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		53393DC621070BFE003D184B /* UITextFieldEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldEx.swift; sourceTree = "<group>"; };
 		53393DC821071CE1003D184B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		53451B4B2108147100CFFEDF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		53451B4D21082CEE00CFFEDF /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		539774542105798C009A002F /* let's chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "let's chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539774572105798C009A002F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539774592105798C009A002F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				5397747E2105B46B009A002F /* Message.swift */,
+				53451B4D21082CEE00CFFEDF /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				53393DC721070BFE003D184B /* UITextFieldEx.swift in Sources */,
 				53393DC52106FEE4003D184B /* UIColorEx.swift in Sources */,
+				53451B4E21082CEE00CFFEDF /* Channel.swift in Sources */,
 				53393DBD2106BC8D003D184B /* ThemeViewController.swift in Sources */,
 				5397745A2105798C009A002F /* LoginViewController.swift in Sources */,
 				539774842105C236009A002F /* InComingImageTableViewCell.swift in Sources */,

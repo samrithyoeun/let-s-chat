@@ -23,40 +23,55 @@ class LoginViewController: UITableViewController {
     @IBOutlet weak var joinButton: UIButton!
     @IBOutlet weak var channelDropDownImageView: UIImageView!
     
+    lazy var imageViewGroup = [userImageView, channelImageView, channelDropDownImageView]
+    lazy var viewGroup = [usernameLineView, channelLineView]
+    lazy var labelGroup = [logoLabel, nameLabel, channelLabel]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ControllerManager.shared.login = self
         changeThemeTo(Theme.black)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let theme = ThemeManager.shared.getTheme()
+        changeThemeTo(theme)
+    }
+    
     @IBAction func joinButtontTapped(_ sender: UIButton) {
-        ThemeManager.shared.switchTheme { (theme) in
-            changeThemeTo(theme)
-        }
+        //TODO : Handle join button and username redundance
         
     }
     
+    private func goToChatScreen(){
+        
+    }
 }
 
 extension LoginViewController: ThemeManagerProtocol {
     func changeThemeTo(_ theme: Theme){
         ThemeManager.changeTo(theme) { (primaryColor, secondaryColor) in
-            view.backgroundColor = primaryColor
+            for mView in viewGroup {
+                mView?.backgroundColor = secondaryColor
+            }
+            
             containerView.backgroundColor = primaryColor
-            logoLabel.textColor = secondaryColor
-            userImageView.tintColor = secondaryColor
-            nameLabel.textColor = secondaryColor
-            usernameLineView.backgroundColor = secondaryColor
+            view.backgroundColor = primaryColor
+            
+            for label in labelGroup {
+                label?.textColor = secondaryColor
+            }
+            
+            for image in imageViewGroup {
+                image?.tintColor = secondaryColor
+            }
+            
             usernameTextField.textColor = secondaryColor
             usernameTextField.setPlaceHolderColor(secondaryColor)
-            channelButton.titleLabel?.textColor = secondaryColor
-            channelLineView.backgroundColor = secondaryColor
-            channelLabel.textColor = secondaryColor
-            channelButton.tintColor = secondaryColor
-            channelButton.titleLabel?.textColor = secondaryColor
+            
             channelButton.setTitleColor(secondaryColor, for: .normal)
-            channelImageView.tintColor = secondaryColor
-            channelDropDownImageView.tintColor = secondaryColor
+            
             joinButton.backgroundColor = secondaryColor
             joinButton.setTitleColor(primaryColor, for: .normal)
         }

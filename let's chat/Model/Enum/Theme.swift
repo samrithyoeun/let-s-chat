@@ -7,8 +7,9 @@
 //
 
 import Foundation
-enum Theme : String {
-    case black = "black"
-    case white = "white"
-    case minion = "minion"
+enum Theme: Int {
+    case black = 0
+    case white = 1
+    case minion = 2
 }
+

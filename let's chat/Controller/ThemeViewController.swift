@@ -33,39 +33,49 @@ class ThemeViewController: UITableViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var lineHeaderView: UIView!
     
-    
     lazy var buttonGroup = [themeButton, saveButton]
+    lazy var themeLabelGroup = [darkLabel, whiteLabel, minonLabel]
     lazy var checkBoxGroup = [darkThemeImageView, whiteThemeImageView, minnionThemeImageView]
     lazy var labelGroup = [darkLabel, primaryDarkLabel, secondaryDarkLabel, whiteLabel, whitePrimaryLabel, whiteSecondaryLabel, minonLabel, primaryMinionLabel, secondaryMinnionLabel]
     lazy var celLViewGroup = [cellView, cellViewThree, cellViewTwo,headerView,view]
+    
+    var selectedIndex = ThemeManager.shared.getTheme().rawValue
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isToolbarHidden = true
 
     }
-
-    @IBAction func saveButtonTapped(_ sender: UIButton) {
-        ThemeManager.shared.switchTheme { (theme) in
-            changeThemeTo(theme)
-        }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let theme = ThemeManager.shared.getTheme()
+        changeThemeTo(theme)
+        setCheckBox(index: theme.rawValue)
+        
     }
     
-    private func setCheckBox(index: IndexPath){
-        let row = index.row
-        
+    @IBAction func saveButtonTapped(_ sender: UIButton) {
+        ThemeManager.shared.setTheme(Theme(rawValue: selectedIndex)!)
+        ThemeManager.shared.setThemeName((themeLabelGroup[selectedIndex]?.text)!)
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func setCheckBox(index: Int) {
         for checkbox in checkBoxGroup {
             checkbox?.isHidden = true
         }
         
-        checkBoxGroup[row]?.isHidden = false
+        checkBoxGroup[index]?.isHidden = false
     }
 }
 
 extension ThemeViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-        setCheckBox(index: indexPath)
+        let index = indexPath.row
+        setCheckBox(index: index)
+        changeThemeTo(Theme(rawValue: index)!)
+        selectedIndex = index
     }
 }
 
@@ -93,6 +103,5 @@ extension ThemeViewController: ThemeManagerProtocol {
             
         }
     }
-    
     
 }

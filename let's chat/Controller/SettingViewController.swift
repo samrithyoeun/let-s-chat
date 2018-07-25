@@ -33,7 +33,7 @@ class SettingViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isToolbarHidden = true
-        
+        ControllerManager.shared.setting = self
         //TODO: do something
         // dark theme
         //  selection style in theme table
@@ -41,15 +41,24 @@ class SettingViewController: UITableViewController {
         
     }
     
-    @IBAction func soundButtonTapped(_ sender: UIButton) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshUI()
+    }
     
+    @IBAction func soundButtonTapped(_ sender: UIButton) {
+        
     }
     
     @IBAction func closeButtonTapped(_ sender: UIButton) {
-//        navigationController?.popViewController(animated: true)
-        ThemeManager.shared.switchTheme { (theme) in
-            changeThemeTo(theme)
-        }
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func refreshUI(){
+        let theme = ThemeManager.shared.getTheme()
+        let name  = ThemeManager.shared.getThemeName()
+        themeSelectedLabel.text = name
+        changeThemeTo(theme)
     }
     
 }

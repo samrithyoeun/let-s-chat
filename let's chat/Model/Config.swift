@@ -10,4 +10,5 @@ import Foundation
 
 struct Config {
     static let theme = "Theme"
+    static let name = "ThemeName"
 }

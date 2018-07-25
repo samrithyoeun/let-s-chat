@@ -22,9 +22,8 @@ class TemplateTableViewCell: UITableViewCell {
     }
     
     public func handleThemeChange(){
-        let theme = UserDefaults.standard.string(forKey: Config.theme)
-        changeThemeTo(Theme(rawValue: theme!)!)
-        
+        let theme = ThemeManager.shared.getTheme()
+        changeThemeTo(theme)
     }
 }
 
@@ -38,6 +37,5 @@ extension TemplateTableViewCell: ThemeManagerProtocol {
             
         }
     }
-    
     
 }

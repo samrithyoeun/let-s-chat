@@ -27,6 +27,22 @@ class ThemeManager{
         
     }
     
+    public func setTheme(_ theme: Theme) {
+         UserDefaults.standard.set(theme.rawValue, forKey: Config.theme)
+    }
+    
+    public func getTheme() -> Theme {
+        return Theme(rawValue: UserDefaults.standard.integer(forKey: Config.theme))!
+    }
+    
+    public func getThemeName() -> String {
+        return UserDefaults.standard.string(forKey: Config.name) ?? "Dark Vader"
+    }
+    
+    public func setThemeName(_ name: String){
+        UserDefaults.standard.set(name, forKey: Config.name)
+    }
+    
     public static func changeTo(_ theme: Theme, handler: (UIColor, UIColor) -> () ){
         var primaryColor = UIColor.ThemeColor.black
         var secondaryColor = UIColor.ThemeColor.white
