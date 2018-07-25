@@ -13,9 +13,12 @@ class InComingMessageTableViewCell: TemplateTableViewCell {
     @IBOutlet weak var senderInfoLabel: UILabel!
     @IBOutlet weak var senderMessageLabel: UILabel!
     
-    func bindDataFrom(_ message: Message){
-        let userInfo = message.username + " - " + message.time
-        senderInfoLabel.text = userInfo
-        senderMessageLabel.text = message.content
+    func bindDataFrom(_ message: Message) {
+        super.contentsView = self.contentView
+        super.userLabel = senderInfoLabel
+        super.messagesLabel = senderMessageLabel
+        super.setMessage(message)
+        super.handleThemeChange()
+       
     }
 }

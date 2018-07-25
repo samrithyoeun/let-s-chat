@@ -14,6 +14,7 @@
 		53393DC52106FEE4003D184B /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53393DC42106FEE4003D184B /* UIColorEx.swift */; };
 		53393DC721070BFE003D184B /* UITextFieldEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53393DC621070BFE003D184B /* UITextFieldEx.swift */; };
 		53393DC921071CE1003D184B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53393DC821071CE1003D184B /* ThemeManager.swift */; };
+		53451B4C2108147100CFFEDF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53451B4B2108147100CFFEDF /* Config.swift */; };
 		539774582105798C009A002F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774572105798C009A002F /* AppDelegate.swift */; };
 		5397745A2105798C009A002F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539774592105798C009A002F /* LoginViewController.swift */; };
 		5397745D2105798C009A002F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5397745B2105798C009A002F /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		53393DC42106FEE4003D184B /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		53393DC621070BFE003D184B /* UITextFieldEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldEx.swift; sourceTree = "<group>"; };
 		53393DC821071CE1003D184B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		53451B4B2108147100CFFEDF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		539774542105798C009A002F /* let's chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "let's chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		539774572105798C009A002F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		539774592105798C009A002F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				CD6C33CB21073DDE00E22718 /* Model */,
 				CD6C33C921073DCD00E22718 /* Manager */,
 				CD6C33CA21073DD600E22718 /* Enum */,
+				53451B4B2108147100CFFEDF /* Config.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,8 +166,8 @@
 		539774892105C471009A002F /* ChatTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				539774832105C236009A002F /* InComingImageTableViewCell.swift */,
 				CD6C33CD21074AD100E22718 /* TemplateTableViewCell.swift */,
+				539774832105C236009A002F /* InComingImageTableViewCell.swift */,
 				539774812105C164009A002F /* InComingMessageTableViewCell.swift */,
 				539774872105C400009A002F /* OutGoingImageTableViewCell.swift */,
 				539774852105C36B009A002F /* OutGoingMessageTableViewCell.swift */,
@@ -291,6 +294,7 @@
 				5397748B2105D614009A002F /* SettingViewController.swift in Sources */,
 				539774862105C36B009A002F /* OutGoingMessageTableViewCell.swift in Sources */,
 				539774882105C400009A002F /* OutGoingImageTableViewCell.swift in Sources */,
+				53451B4C2108147100CFFEDF /* Config.swift in Sources */,
 				CD6C33CE21074AD100E22718 /* TemplateTableViewCell.swift in Sources */,
 				53393DC921071CE1003D184B /* ThemeManager.swift in Sources */,
 				5397747B2105B383009A002F /* ChatViewController.swift in Sources */,

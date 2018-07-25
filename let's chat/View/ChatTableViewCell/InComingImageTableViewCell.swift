@@ -13,9 +13,11 @@ class InComingImageTableViewCell: TemplateTableViewCell {
     @IBOutlet weak var senderInfoLabel: UILabel!
     @IBOutlet weak var senderImageView: UIImageView!
     
-    func bindDataFrom(_ message: Message){
-        let userInfo = message.username + " - " + message.time
-        senderInfoLabel.text = userInfo
-        senderImageView.image = UIImage(named: message.content)
+    func bindDataFrom(_ message: Message) {
+        super.contentsView = self.contentView
+        super.userLabel = senderInfoLabel
+        super.stickerImageView = senderImageView
+        super.setMessage(message)
+        super.handleThemeChange()
     }
 }

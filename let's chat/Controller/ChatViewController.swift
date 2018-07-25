@@ -58,6 +58,8 @@ class ChatViewController: UIViewController {
         
         ThemeManager.shared.switchTheme { (theme) in
             changeThemeTo(theme)
+            UserDefaults.standard.set(theme.rawValue, forKey: Config.theme)
+            chatTableView.reloadData()
         }
     }
     

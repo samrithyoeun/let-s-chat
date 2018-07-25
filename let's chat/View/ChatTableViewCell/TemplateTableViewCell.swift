@@ -14,7 +14,30 @@ class TemplateTableViewCell: UITableViewCell {
     var messagesLabel: UILabel?
     var contentsView: UIView?
     
-    public func themeChange(){
+    public func setMessage(_ message: Message){
+        userLabel?.text = message.username + " - " + message.time
+        messagesLabel?.text = message.content
+        stickerImageView?.image = UIImage(named: message.content)
         
     }
+    
+    public func handleThemeChange(){
+        let theme = UserDefaults.standard.string(forKey: Config.theme)
+        changeThemeTo(Theme(rawValue: theme!)!)
+        
+    }
+}
+
+extension TemplateTableViewCell: ThemeManagerProtocol {
+    func changeThemeTo(_ theme: Theme) {
+        ThemeManager.changeTo(theme) { (firstColor, secondColor) in
+            userLabel?.textColor = secondColor
+            stickerImageView?.tintColor = secondColor
+            contentsView?.backgroundColor = firstColor
+            messagesLabel?.textColor = secondColor
+            
+        }
+    }
+    
+    
 }
